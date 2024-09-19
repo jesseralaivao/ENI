@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaming Vidéo</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+  <nav>
+  	<ul>
+   	 <li><a href="/">Accueil</a></li>
+   	 <li><a href="/videos">Vidéos</a></li>
+   	 <li><a href="/about">À propos</a></li>
+ 	 </ul>
+	</nav>
+
+
+    <h1>Bienvenue sur notre plateforme de streaming</h1>
+    
+    <video id="videoPlayer" width="640" controls>
+      <source src="video.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas le streaming vidéo.
+    </video>
+
+    <!-- Section des likes et évaluations -->
+
+    <div class="like-section">
+      <button id="likeBtn" class="like-btn">👍 J'aime</button> 
+      <span id="likeCount" class="like-count">0</span> J'aime
+      <button id="downloadBtn" class="download-btn">⬇️ Télécharger</button>
+      <span id="downloadCount" class="download-count">0</span> Téléchargements
+      <button id="shareBtn" class="share-btn">🔗 Partager</button>
+      <span id="shareCount" class="share-count">0</span> Partages
+    </div>
+    
+
+    <!-- Section des commentaires -->
+    <div class="comment-section">
+      <div class="view-section">
+        <h2><i class="fas fa-eye"></i> Nombre de vues : (<span id="viewCount">0</span>)</h2>
+      </div>
+      <div class="comment-section">
+        <h2>Commentaires (<span id="commentCount">0</span>)</h2>
+        <ul id="commentList" class="comment-list">
+          <!-- Les commentaires seront insérés ici -->
+        </ul>
+      </div>      
+        <!-- Les commentaires seront insérés ici -->
+      </ul>
+      <form id="commentForm">
+        <input type="text" id="pseudoInput" placeholder="Entrer un pseudo" required>
+        <input type="text" id="commentInput" placeholder="Laissez un commentaire" required>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>    
+  
+    <ul id="commentList"></ul>
+    <script src="/app.js"></script>
+    <footer className="footer">
+        <p>© 2024 Plateforme de Streaming. Tous droits réservés.</p>
+        <p>
+          Suivez-nous sur 
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>,
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> Facebook</a>,
+          et <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a>,,
+        </p>
+    </footer>
+  </div>  
+</body>
+</html>
