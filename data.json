@@ -1,0 +1,25 @@
+{
+  "likes": 7,
+  "comments": [
+    {
+      "pseudo": "John",
+      "comment": "Nice"
+    },
+    {
+      "pseudo": "pikla",
+      "comment": "Thanks"
+    },
+    {
+      "pseudo": "Doe",
+      "comment": "ok"
+    }
+  ],
+  "views": 3,
+  "viewers": [
+    "::ffff:192.168.88.235",
+    "::ffff:192.168.88.242",
+    "::ffff:127.0.0.1"
+  ],
+  "downloads": 3,
+  "shares": 8
+}
